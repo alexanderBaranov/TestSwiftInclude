@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestSwiftInclude-Swift.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"goToSwiftController"]) {
+        ViewController2 *vc2 = segue.destinationViewController;
+        vc2.message = @"Hellow, Swift!!!";
+    }
+}
 
 @end

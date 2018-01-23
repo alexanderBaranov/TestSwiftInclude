@@ -13,6 +13,7 @@
 		11C81B152017CACE00487DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C81B142017CACE00487DAE /* Assets.xcassets */; };
 		11C81B182017CACE00487DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C81B162017CACE00487DAE /* LaunchScreen.storyboard */; };
 		11C81B1B2017CACE00487DAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C81B1A2017CACE00487DAE /* main.m */; };
+		11C81B252017CC1800487DAE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C81B242017CC1800487DAE /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		11C81B172017CACE00487DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11C81B192017CACE00487DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11C81B1A2017CACE00487DAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11C81B212017CB7E00487DAE /* TestSwiftInclude-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwiftInclude-Bridging-Header.h"; sourceTree = "<group>"; };
+		11C81B242017CC1800487DAE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +65,13 @@
 				11C81B0C2017CACE00487DAE /* AppDelegate.m */,
 				11C81B0E2017CACE00487DAE /* ViewController.h */,
 				11C81B0F2017CACE00487DAE /* ViewController.m */,
+				11C81B242017CC1800487DAE /* ViewController2.swift */,
 				11C81B112017CACE00487DAE /* Main.storyboard */,
 				11C81B142017CACE00487DAE /* Assets.xcassets */,
 				11C81B162017CACE00487DAE /* LaunchScreen.storyboard */,
 				11C81B192017CACE00487DAE /* Info.plist */,
 				11C81B1A2017CACE00487DAE /* main.m */,
+				11C81B212017CB7E00487DAE /* TestSwiftInclude-Bridging-Header.h */,
 			);
 			path = TestSwiftInclude;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				TargetAttributes = {
 					11C81B072017CACE00487DAE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -143,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C81B102017CACE00487DAE /* ViewController.m in Sources */,
+				11C81B252017CC1800487DAE /* ViewController2.swift in Sources */,
 				11C81B1B2017CACE00487DAE /* main.m in Sources */,
 				11C81B0D2017CACE00487DAE /* AppDelegate.m in Sources */,
 			);
@@ -222,6 +229,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -270,6 +278,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -278,11 +287,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = TestSwiftInclude/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alb.TestSwiftInclude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftInclude/TestSwiftInclude-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -291,11 +305,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = TestSwiftInclude/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = alb.TestSwiftInclude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftInclude/TestSwiftInclude-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
