@@ -21,13 +21,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5R-KU-hYq">
                                 <rect key="frame" x="95" y="318" width="185" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <state key="normal" title="Go to swift storyboard"/>
+                                <color key="backgroundColor" red="1" green="0.87608506944444442" blue="0.63913302951388884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go to swift storyboard">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="3rE-t7-1ls" kind="show" identifier="goToSwiftController" id="Zo1-gL-TrJ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.73895941840277779" green="1" blue="0.59563961651388886" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -39,16 +42,27 @@
         <scene sceneID="fwL-jh-W2G">
             <objects>
                 <viewController id="3rE-t7-1ls" customClass="ViewController2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hMJ-I0-ykV">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="hMJ-I0-ykV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFE-Lm-oWu">
+                                <rect key="frame" x="30" y="318" width="316" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" red="0.738525390625" green="0.87608506944444442" blue="0.63913302951388884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Go to objective c storyboard"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qpA-uy-3eN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.71011444290277781" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="VD6-go-isQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEU-yq-j7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="134"/>
+            <point key="canvasLocation" x="1117.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
